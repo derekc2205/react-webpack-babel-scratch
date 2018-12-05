@@ -104,6 +104,8 @@ module.exports = {
     - in `start` script, `--mode development` flag is used to **produce easy to read codes**
     - in `build`, `--mode production` flag is used to **produce optimized files** ready for production
 
+    after running the `script`, webpack will transpile codes in `index.js`, `~/dist/index_bundle.js` will be created containing **ES5 code** from `index.js`
+
     ```javascript
     {
         scripts: {

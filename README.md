@@ -145,3 +145,13 @@ module.exports = {
       text-align: center;
     }
     ```
+
+15. update `~/src/index.js` with the code below
+
+    ```javascript
+    import React from "react";
+    import ReactDOM from "react-dom";
+    import App from "./components/App";
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+    ```

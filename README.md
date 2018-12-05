@@ -81,3 +81,19 @@ module.exports = {
 10. install `css-loader` and `style-loader`
 
     `npm install css-loader style-loader --save-dev`
+
+11. create file `.babelrc` in `root`
+
+    this file is **config for babel** to **use which presets** for **transpiling code**
+
+    - `preset-env`: to transpile **ES6/ES7/ES8** code to **ES5**
+    - `preset-react`: to transpile **JSX** code to **ES5**
+
+    ```javascript
+    {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    }
+    ```

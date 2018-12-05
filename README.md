@@ -155,3 +155,9 @@ module.exports = {
 
     ReactDOM.render(<App />, document.getElementById("root"));
     ```
+
+16. install `HTML-webpack-plugin` to generate an HTML file
+
+    this is used for **injecting scripts** inside the HTML file and writes to `~/dist/index.html`
+
+    `npm install html-webpack-plugin --save-dev`

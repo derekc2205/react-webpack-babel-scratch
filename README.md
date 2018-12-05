@@ -1,5 +1,13 @@
 # react-webpack-babel-scratch
 
+## Description
+
+This is a guide to build a **React** project from scratch using **Webpack 4** and **Babel**
+
+Following the guide [How to build a React project from scratch using Webpack 4 and Babel](https://hackernoon.com/how-to-build-a-react-project-from-scratch-using-webpack-4-and-babel-56d4a26afd32)
+
+By [Sukhjinder Arora](https://hackernoon.com/@Sukhjinder) on [HackerNoon](https://hackernoon.com/)
+
 1. create src/components and src/styles folders
 
    `mkdir -p src/components src/styles`
@@ -180,7 +188,7 @@ module.exports = {
     }
     ```
 
-### Intermission
+## Intermission
 
 Running `npm start` will generate `index_bundle.js` and `index.html` in `~/dist` folder
 

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/derekc2205/react-webpack-babel-scratch/issues"
   },
-  "homepage": "https://github.com/derekc2205/react-webpack-babel-scratch#readme"
+  "homepage": "https://github.com/derekc2205/react-webpack-babel-scratch#readme",
+  "devDependencies": {
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  }
 }

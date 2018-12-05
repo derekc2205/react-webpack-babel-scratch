@@ -97,3 +97,18 @@ module.exports = {
         ]
     }
     ```
+
+12. add `scripts` in `package.json` for **compiling files using webpack**
+
+    - in `start` script, `--watch` flag is used to **automatically compile** all source files **when changes is made**
+    - in `start` script, `--mode development` flag is used to **produce easy to read codes**
+    - in `build`, `--mode production` flag is used to **produce optimized files** ready for production
+
+    ```javascript
+    {
+        scripts: {
+            "start": "webpack --mode development --watch",
+            "build": "webpack --mode production"
+        }
+    }
+    ```

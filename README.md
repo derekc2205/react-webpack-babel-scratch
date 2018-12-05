@@ -134,3 +134,12 @@ module.exports = {
 
     export default App;
     ```
+
+14. create `App.css` file in `~/src/styles` with code below
+
+    ```css
+    h1 {
+      color: #27aedb;
+      text-align: center;
+    }
+    ```

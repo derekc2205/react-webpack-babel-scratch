@@ -114,3 +114,23 @@ module.exports = {
         }
     }
     ```
+
+13. create `App.js` file in `~/src/components` with code below
+
+    ```javascript
+    import React, { Component } from "react";
+
+    import "../style/App.css";
+
+    class App extends Component {
+      render() {
+        return (
+          <div>
+            <h1>My React App!</h1>
+          </div>
+        );
+      }
+    }
+
+    export default App;
+    ```

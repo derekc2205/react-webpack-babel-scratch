@@ -137,6 +137,8 @@ module.exports = {
 
 14. create `App.css` file in `~/src/styles` with code below
 
+    this file is to make sure `css-loader` and `style-loader` is working correctly
+
     ```css
     h1 {
       color: #27aedb;

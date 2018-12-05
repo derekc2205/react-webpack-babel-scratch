@@ -188,3 +188,13 @@ Opening `index.html` will now allow you to see the static webpage with the text 
 
 This approach **has no hot reload**, **manual refresh** is required as code changes
 
+18. install `webpack-dev-server` to enable **hot reload**
+
+    `npm install webpack-dev-server --save-dev`
+
+    and update `package.json` `start` script
+
+    `"start": "webpack-dev-server --mode development --open --hot`
+
+    - `open`: **automatically opens** webpage as the script runs
+    - `hot`: **automatically refreshes** webpage as the code changes

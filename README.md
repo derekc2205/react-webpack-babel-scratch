@@ -207,8 +207,6 @@ module.exports = {
     }
     ```
 
-> ## Intermission
->
 > Running `npm start` **_here_** will generate `index_bundle.js` and `index.html` in `~/dist` folder.
 > Opening `index.html` will now allow you to see the static webpage with the text **_My React App!_**.
 > This approach **_has no hot reload_**, **_manual refresh_** is required as code changes.

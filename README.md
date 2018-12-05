@@ -161,3 +161,30 @@ module.exports = {
     this is used for **injecting scripts** inside the HTML file and writes to `~/dist/index.html`
 
     `npm install html-webpack-plugin --save-dev`
+
+17. update `webpack.config.js` for `html-webpack-plugin`
+
+    - **template key** is the `./src/index.html` file as a template and generates new file named `index.html` in `~/dist` folder with `script` **injected**
+
+    ```javascript
+    const path = require("path");
+    const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+    module.exports = {
+        ...,
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: "./src/index.html"
+            })
+        ]
+    }
+    ```
+
+### Intermission
+
+Running `npm start` will generate `index_bundle.js` and `index.html` in `~/dist` folder
+
+Opening `index.html` will now allow you to see the static webpage with the text **My React App!**
+
+This approach **has no hot reload**, **manual refresh** is required as code changes
+

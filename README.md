@@ -77,3 +77,7 @@ module.exports = {
   }
 }
 ```
+
+10. install `css-loader` and `style-loader`
+
+    `npm install css-loader style-loader --save-dev`

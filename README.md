@@ -48,3 +48,32 @@
      }
  };
 ```
+
+9. add **webpack loaders**, append in `webpack.config.js`, after `output: ...`
+
+   loaders are responsible for **loading and bundling** the **source files**
+
+   - `babel-loader`: to **load** `JSX/Javascript` files
+   - `css-loader`: to **load and bundle** `CSS` files
+   - `style-loader`: **add** all styles inside the **style tag** of the document
+
+```javascript
+module.exports = {
+    ...,
+    module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  }
+}
+```

@@ -30,3 +30,21 @@
    `console.log('hello')`
 
 7. add `index.html` in `./src` folder with a `<div id="root">` in the html structure
+
+8. add `webpack.config.js` at `root` with the **code** below
+
+   this file is used for **defining rules** for our **loaders** by defining the `entry` point and `output` directory
+
+   in the code below, webpack will bundle **all `*.js` files** into `index-bundle.js`
+
+```javascript
+ const path = require("path");
+
+ module.exports = {
+     entry: "./src/index.js",
+     output: {
+     path: path.join(\_\_dirname, "/dist"),
+     filename: "index_bundle.js"
+     }
+ };
+```
